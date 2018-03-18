@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity implements OnGitHubUserListe
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
+                cardView.setVisibility(View.GONE);
                 adapter.clear();
                 searchText = query;
                 page = 1;
